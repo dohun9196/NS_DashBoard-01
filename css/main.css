@@ -1,0 +1,104 @@
+/* header */
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 270px;
+  height: 100%;
+  background: #f2f3ff;
+}
+
+.Header .Logo {
+  height: 100px;
+  line-height: 100px;
+  border-bottom: 1px solid #fff;
+}
+.Header .Logo a {
+  display: block;
+}
+.Header .Logo a > img {
+  height: 100%;
+  vertical-align: middle;
+}
+
+.Header .Gnb {
+  padding: 30px;
+  padding-bottom: 0;
+  color: #808080;
+}
+
+.Header .Gnb .list {
+  margin: 0 0 30px 0;
+}
+
+.Header .Gnb ul > li > span {
+  display: block;
+  color: #082431;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0 0 10px 0;
+}
+.Header .Gnb .drop_nav {
+  color: #6e7277;
+}
+
+.Header .Gnb .drop_nav > li {
+  line-height: 40px;
+  padding: 0 20px;
+}
+
+.Header .Gnb .drop_nav > li > a {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.5s;
+}
+.Header .Gnb .drop_nav > li.nav_on > a {
+  font-weight: 500;
+}
+
+.Header .Gnb .drop_nav > li:hover a {
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.Header .log {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  padding: 0 30px;
+  text-align: right;
+}
+.Header .log i {
+  display: block;
+
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  color: inherit;
+  text-align: center;
+  line-height: 50px;
+
+  cursor: pointer;
+
+  transition: 0.5s;
+}
+.Header .log i:hover {
+  background: rgba(112, 127, 221, 0.5);
+  color: #fff;
+}
+/* main */
+
+.Wrap {
+  width: calc(100% - 270px);
+  margin: 0 0 0 270px;
+  height: 100vh;
+  background: rgb(209, 211, 226);
+  background: linear-gradient(
+    0deg,
+    rgb(249 249 255) 5%,
+    rgba(255, 255, 255, 1) 95%
+  );
+}
